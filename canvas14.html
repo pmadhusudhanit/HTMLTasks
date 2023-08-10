@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas</title>
+</head>
+<body>
+    <h1 style="text-align: center; font-family: 'Times New Roman', Times, serif;">Canvas</h1>
+    <canvas id="Madhu" width="500" height="500" style="border: 2px solid red;"> 
+    </canvas>
+        <script>
+            var canvas=document.getElementById("Madhu");
+            var c=canvas.getContext("2d");
+            c.fillStyle="blue";
+            c.fillRect(100,100,100,100);
+            c.beginPath();
+            c.moveTo(289,300);
+            c.lineTo(100,100);
+            c.stroke();
+            c.font="50px Arial";
+            c.textAlign="Center";
+            c.fillText("Madhusudhan",50,50);
+            c.strokeText("IT",100,100);
+         </script> 
+</body>
+</html>
